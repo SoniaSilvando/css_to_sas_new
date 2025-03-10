@@ -1,0 +1,39 @@
+@use "sass:color" as *;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    gap: 20px; // Separación entre imagen y texto
+
+    img {
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 10px;
+    }
+
+    .text-container {
+        max-width: 600px;
+        margin: auto;
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        a.shop-now {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #a86c3f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+
+            
+        }
+    }
+}

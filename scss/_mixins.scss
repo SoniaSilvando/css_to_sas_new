@@ -1,0 +1,32 @@
+//  Mixin Flexbox
+@mixin flexbox($align: center, $justify: center) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+// Mixin botom
+@mixin button($bg-color, $text-color) {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $bg-color;
+    color: $text-color;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+// Mixin Media Queries
+@mixin media($size) {
+    @if $size == mobile {
+        @media screen and (max-width: 768px) { @content; }
+    } @else if $size == tablet {
+        @media screen and (max-width: 1024px) { @content; }
+    }
+}

@@ -1,0 +1,72 @@
+@use "variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $secondary-color;
+    color: black;
+}
+
+body {
+    font-family: $font-stack;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+:is(h1, h2, h3) {
+    color: #a86c3f;
+    font-family: Arial, sans-serif;
+}
+/*______________________quote______________________*/
+blockquote {
+    position: relative;
+    font-style: italic;
+    color: #444;
+    padding: 20px;
+    margin: 80px 0;
+    background: #f9f9f9;
+    border-left: 5px solid #a86c3f;
+}
+
+blockquote::before {
+    content: "  “  ";
+    font-size: 4rem;
+    color: #a86c3f;
+    position: absolute;
+    left: -2px;
+    top: -32px;
+}
+
+blockquote::after {
+    content: "”";
+    font-size: 4rem;
+    color: #a86c3f;
+    position: absolute;
+    right: 20px;
+    bottom: -71px;
+}
+
+/*______________________quote______________________*/
+/*______________________about_____________________*/
+
+
+
+#about p::first-line{
+    font-weight: bold;
+}
+
+
+
+/*_____________________about______________________*/

@@ -1,0 +1,28 @@
+
+@use "variables" as *;
+@use "mixins" as *;
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid $border-color;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 70px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: $text-color;
+        }
+    }
+}

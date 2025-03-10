@@ -1,0 +1,67 @@
+@use "variables" as *;
+
+$image-sizes: (small: 100px, medium: 230px, large: 400px);
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; // Asegura que no se achiquen demasiado
+    gap: 15px;
+    width: 60%;
+
+    @each $size, $value in $image-sizes {
+        &--#{$size} {
+            max-width: $value;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px; // Evita que las imágenes se achiquen demasiado
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.text-image-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-width: 90%; 
+    margin: 20px auto;
+    gap: 20px; 
+
+    .text-below {
+        width: 40%;
+        max-width: 400px;
+        text-align: left;
+    }
+
+    .image-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 17px;
+        width: 60%; 
+    
+        img {
+            width: calc(33.333% - 15px); // Hace que las imágenes ocupen un buen espacio
+            max-width: 300px; // Evita que se agranden demasiado
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

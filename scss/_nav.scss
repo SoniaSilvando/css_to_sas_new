@@ -1,0 +1,29 @@
+@use "variables" as *;
+
+%list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    ul {
+        @extend %list-reset;
+        display: flex;
+
+        li {
+            margin: 0 15px;
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+                font-weight: 500;
+
+                &.active {
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

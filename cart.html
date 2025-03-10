@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Soul Hub</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-container">
+            <img src="images/logo1.jpg" alt="Soul Hub Logo">
+            <h1>The Journey Inward</h1>
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="room.html">Manifestation Tools</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>   
+        </nav>
+    </header>
+    
+    <main id ="product" >
+        
+        <section class="big-section-product">
+            <h2>Custom Affirmations Mirror LED Neon Light  </h2>
+            <p>&nbsp;&nbsp;&nbsp;</p>
+            <p>&nbsp;&nbsp;&nbsp;</p>
+
+            <img class="img-hover-effect" src="images/miror2.jpg" alt="miror ref2">
+        </section>
+        <section class="product-descripcion">
+
+            <h3>Please read and fill out the information</h3>
+            <p>&nbsp;&nbsp;&nbsp;</p>
+            <form action="#" method="post" id="theForm">
+                <fieldset>
+                    
+                    <legend>Shipping Information</legend>
+                    
+                    <label for="orderID">Order ID (Read-Only):</label>
+                    <input type="text" id="orderID" value="ORD-456789" readonly>
+                    
+                    <div class="two">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    
+                    <div class="two">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    
+                    <div class="two">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    
+                    <div class="two">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" pattern="[0-9]{10}" required>
+                    </div>
+                    
+                    <div class="two">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    
+                    <div class="two">
+                        <label for="state">State</label>
+                        <select name="state" id="state" required>
+                            <option value="">Select a State</option>
+                            <option value="VIC">VIC</option>
+                            <option value="TAS">TAS</option>
+                            <option value="SA">SA</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>           
+                        </select>
+                    </div>  
+                    
+                    <div class="two">
+                        <label for="zip">Post Code</label>
+                        <input type="number" name="zip" id="zip" min="1000" max="9999" required>
+                    </div>
+        
+                    <div class="one">
+                        <label for="terms">
+                            <input type="checkbox" name="terms" id="terms" required> I agree to the terms.
+                        </label>
+                    </div>
+        
+                    <div class="one">
+                        <input type="submit" value="Send" id="submit" disabled>
+                    </div>
+        
+                </fieldset>
+            </form>
+                </section>
+        <section class="small-section-cart">
+            <h4>You Might Also Like...</h4>
+            <img class="img-hover-effect" src="images/miniboock1.jpg" alt="miniboock ref 1">            
+            <img class="img-hover-effect" src="images/minicardref1.jpg" alt="mini card ref 1 ">
+            <img class="img-hover-effect" src="images/minigameref1.jpg" alt="mini game ref 1 ">
+            <img class="img-hover-effect" src="images/minigameref2.jpg" alt="minigame ref ref 2 ">
+
+        </section>
+            <section class="button-produc">
+                <h4>Checkout</h4>
+            <img src="images/trolly.png" alt="carrito">
+            <button>See Full Cart</button>
+        </section>
+        
+            </main>
+<footer>
+        <p>© 2024 SoulHub. All rights reserved.</p>
+        <p>Privacy policy </p>
+        <p>SoulHub collects client information to complete the enrolment process and to maintain and improve the quality of the organization's system. Clients may also be contacted to participate in surveys, essential to monitoring the quality-of-service provision. The Privacy Act 1988 (Cth) apply to this organization and provide protection against the misuse of client information.</p>
+        <p>Contact Us: info@SoulHub.com | Phone: +1 (555) 123-4567</p>
+        <p>15 George St, Perth</p>
+</footer>
+
+
+</div>
+<script src="js/utilities.js"></script>
+<script src="js/errorMessages.js"></script>
+<script src="js/register.js"></script>
+</body>    
+</html>
