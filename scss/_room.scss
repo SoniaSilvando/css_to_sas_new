@@ -1,0 +1,15 @@
+#room {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 4%;
+
+    .search-box {
+        grid-column: 1 / -1;  // Ocupa todo el ancho
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+} 

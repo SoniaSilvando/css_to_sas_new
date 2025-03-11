@@ -1,0 +1,15 @@
+.shop-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ddd;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+    &:hover {
+        background-color: darken(#ddd, 10%);
+        transition: background-color 0.3s ease;
+    }
+} 

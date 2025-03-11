@@ -1,0 +1,31 @@
+.button-produc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px; // Espacio entre elementos
+    
+    button {
+        padding: 10px 20px;
+        background-color: #a86c3f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+            background-color: darken(#a86c3f, 10%);
+        }
+    }
+    
+    img {
+        width: 30px;
+        height: auto;
+    }
+    
+    h5 {
+        margin: 0;
+        color: #333;
+    }
+} 
