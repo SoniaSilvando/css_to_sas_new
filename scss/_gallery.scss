@@ -5,7 +5,7 @@ $image-sizes: (small: 100px, medium: 230px, large: 400px);
 .image-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; // Asegura que no se achiquen demasiado
+    flex-wrap: wrap; 
     gap: 15px;
     width: 60%;
 
@@ -17,7 +17,7 @@ $image-sizes: (small: 100px, medium: 230px, large: 400px);
 
     img {
         width: 100%;
-        max-width: 300px; // Evita que las imágenes se achiquen demasiado
+        max-width: 300px; 
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -53,8 +53,8 @@ $image-sizes: (small: 100px, medium: 230px, large: 400px);
         width: 60%; 
     
         img {
-            width: calc(33.333% - 15px); // Hace que las imágenes ocupen un buen espacio
-            max-width: 300px; // Evita que se agranden demasiado
+            width: calc(33.333% - 15px); 
+            max-width: 300px; 
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
 
