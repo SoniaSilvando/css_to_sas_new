@@ -2,11 +2,10 @@
 @use "mixins" as *;
 
 #about {
-    max-width: $max-width;
+    
     margin: 50px auto;
     padding: 40px;
     background: $background-color;
-    border-radius: $border-radius;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     
     // Contenedor General
@@ -21,7 +20,6 @@
         text-align: center;
         background: lighten($background-color, 5%);
         padding: 30px;
-        border-radius: $border-radius;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
 
@@ -52,7 +50,6 @@
         #aboutimg {
             width: 100%;
             max-width: 400px;
-            border-radius: $border-radius;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
 
@@ -66,7 +63,6 @@
     #products-services {
         background: darken($background-color, 3%);
         padding: 30px;
-        border-radius: $border-radius;
         max-width: 900px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
@@ -102,7 +98,6 @@
         text-align: center;
         padding: 30px;
         max-width: 800px;
-        border-radius: $border-radius;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         background: lighten($background-color, 3%);
         
@@ -117,7 +112,7 @@
         }
 
         .about-button {
-            @include button($button-bg, $button-hover);
+
             margin-top: 20px;
         }
     }

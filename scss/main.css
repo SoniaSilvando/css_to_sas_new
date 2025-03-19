@@ -74,7 +74,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
 }
 header .logo-container {
   display: flex;
@@ -407,4 +407,103 @@ footer {
 .button-produc h5 {
   margin: 0;
   color: #333;
+}
+
+#about {
+  margin: 50px auto;
+  padding: 40px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+#about .article-blog {
+  max-width: 900px;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+#about .article-blog:hover {
+  transform: translateY(-5px);
+}
+#about .article-blog h2 {
+  font-size: 2rem;
+  color: #a86c3f;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#about .article-blog h3 {
+  font-size: 1.5rem;
+  color: #70482a;
+  margin-bottom: 10px;
+}
+#about .article-blog p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4d4d4d;
+}
+#about .article-blog #aboutimg {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+#about .article-blog #aboutimg:hover {
+  transform: scale(1.05);
+}
+#about #products-services {
+  background: #f1f1f1;
+  padding: 30px;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+#about #products-services:hover {
+  transform: translateY(-5px);
+}
+#about #products-services h2 {
+  text-align: center;
+  color: #a86c3f;
+  font-size: 1.8rem;
+}
+#about #products-services ul {
+  list-style: none;
+  padding: 0;
+}
+#about #products-services ul li {
+  font-size: 1.1rem;
+  padding: 8px 0;
+  color: #333;
+}
+#about #products-services ul li strong {
+  color: #a86c3f;
+}
+#about #join-us {
+  text-align: center;
+  padding: 30px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+#about #join-us h2 {
+  font-size: 2rem;
+  color: #e7cbf3;
+}
+#about #join-us p {
+  font-size: 1.2rem;
+  color: #333;
+}
+#about #join-us .about-button {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #about .article-blog, #about #products-services, #about #join-us {
+    max-width: 100%;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
