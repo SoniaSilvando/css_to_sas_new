@@ -1,0 +1,134 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+#about {
+    max-width: $max-width;
+    margin: 50px auto;
+    padding: 40px;
+    background: $background-color;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    // Contenedor General
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    // Sección con la filosofía
+    .article-blog {
+        max-width: 900px;
+        text-align: center;
+        background: lighten($background-color, 5%);
+        padding: 30px;
+        border-radius: $border-radius;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: $primary-color;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: darken($primary-color, 15%);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: lighten($text-color, 10%);
+        }
+
+        // Imagen dentro de los artículos
+        #aboutimg {
+            width: 100%;
+            max-width: 400px;
+            border-radius: $border-radius;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    // Lista de Productos y Servicios
+    #products-services {
+        background: darken($background-color, 3%);
+        padding: 30px;
+        border-radius: $border-radius;
+        max-width: 900px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            text-align: center;
+            color: $primary-color;
+            font-size: 1.8rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                font-size: 1.1rem;
+                padding: 8px 0;
+                color: $text-color;
+
+                strong {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    // Sección para invitar a unirse
+    #join-us {
+        text-align: center;
+        padding: 30px;
+        max-width: 800px;
+        border-radius: $border-radius;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background: lighten($background-color, 3%);
+        
+        h2 {
+            font-size: 2rem;
+            color: $secondary-color;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: $text-color;
+        }
+
+        .about-button {
+            @include button($button-bg, $button-hover);
+            margin-top: 20px;
+        }
+    }
+}
+
+// Responsividad
+@media (max-width: 768px) {
+    #about {
+        .article-blog, #products-services, #join-us {
+            max-width: 100%;
+            padding: 20px;
+        }
+    }
+}
